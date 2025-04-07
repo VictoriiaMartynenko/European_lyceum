@@ -61,5 +61,136 @@
             </div>
         </div>
     </div>
+
+    <!-- Корисні функції -->
+
+    <section class="useful-functions">
+        <h2 class="section-title">Корисні функції нашого сайту</h2>
+        <p class="section-subtitle">Рекомендуємо спробувати!</p>
+        
+        <div class="cards-container">
+            <!-- Virtual Tour Card -->
+            <a href="#" class="card wide-card">
+                <img src="/img/virtual.jpg" alt="Віртуальна прогулянка">
+                <div class="card-gradient"></div>
+                <h3 class="card-title">Віртуальна прогулянка</h3>
+            </a>
+            
+            <div class="cards-row">
+                <!-- Profile Tests Card -->
+                <a href="#" class="card">
+                    <img src="img/.jpg" alt="Профільні тести">
+                    <div class="card-gradient"></div>
+                    <h3 class="card-title">Профільні тести</h3>
+                </a>
+    
+                <!-- FAQ Card -->
+                <a href="#" class="card">
+                    <img src="img/faq.jpg" alt="FAQ">
+                    <div class="card-gradient"></div>
+                    <h3 class="card-title">FAQ</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+            </section>
+
+            
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-image">
+            <!-- Placeholder for images -->
+        </div>
+        
+        <div class="faq-content">
+            <h2 class="faq-title">FAQ (поширені запитання)</h2>
+            
+            <div class="accordion">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Які іноземні мови у вас вивчаються?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Англійська мова як перша іноземна та німецька/французька як друга іноземна мова.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Який формат навчання у вашому закладі?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Усі класи, крім 6 і 7 знаходяться на офлайн навчанні, відвідуючи школу щодня. Паралелі 6-7 класів — на змішаному. Вони ходять до школи через день.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Які профілі навчання пропонуються в десятих класах?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Іноземна філологія, українська філологія, історичний профіль, математичний, хіміко-біологічний, фізико-математичний.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Які гуртки пропонує ваш навчальний заклад?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Вокал, хореографія, спортивні секції, театральна студія, художній гурток.</p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Чи проводиться набір у 5-ті класи?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Так. Починаючи з 5-го класу буде реалізуватися допрофільне навчання з англійської мови та математики.</p>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        <span>Який режим роботи закладу під час повітряної тривоги?</span>
+                        <div class="arrow"></div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Уроки продовжуються в безпечному місці.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<script>
+// Open the first accordion item by default
+document.querySelector('.accordion-item').classList.add('active');
+
+// Add click handlers to all accordion buttons
+document.querySelectorAll('.accordion-button').forEach(button => {
+button.addEventListener('click', () => {
+    const accordionItem = button.parentElement;
+    // Toggle active class on click
+    accordionItem.classList.toggle('active');
+});
+});
+</script>
 </body>
 </html> 
