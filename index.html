@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js" defer></script>
 </head>
 
 <!-- Header -->
@@ -18,27 +19,98 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <img src="img/хедер лого ліцею.png" alt="Logo">
+                <img src="img/header_lyceum_logo.png" alt="Logo">
             </div>
             <div class="nav-links">
-                <a class="nav-link" href="#"><span>Про</span><span>ліцей</span></a>
-                <a class="nav-link" href="#"><span>Новини</span></a>
-                <a class="nav-link" href="#"><span>Педагогічний</span><span>колектив</span></a>
-                <a class="nav-link" href="#"><span>Прозорість</span><span>управління</span></a>
-                <a class="nav-link" href="#"><span>Освітній</span><span>процес</span></a>
-                <a class="nav-link" href="#"><span>Методична</span><span>робота</span></a>
-                <a class="nav-link" href="#"><span>Інформаційна</span><span>сторінка</span></a>
-                <a class="nav-link" href="#"><span>Інше</span></a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Про</span><span>ліцей</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Наша візитка</a>
+                        <a href="#">Історія закладу</a>
+                        <a href="#">Інноваційна діяльність</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Новини</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Стрічка новин</a>
+                        <a href="#">Календар подій</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Педагогічний</span><span>колектив</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Адміністрація</a>
+                        <a href="#">Професійні педагогічні спільноти</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Прозорість</span><span>управління</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Нормативні документи</a>
+                        <a href="#">Фінансова звітність</a>
+                        <a href="#">Публічна інформація</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Освітній</span><span>процес</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Інтелект та обдарованість</a>
+                        <a href="#">Учнівське самоврядування</a>
+                        <a href="#">Проєктно-дослідницька діяльність</a>
+                        <a href="#">Національно-патріотичне виховання</a>
+                        <a href="#">Критерії оцінювання</a>
+                        <a href="#">Профорієнтаційна сторінка</a>
+                        <a href="#">Морально-етичне виховання</a>
+                        <a href="#">Клуби та студії</a>
+                        <a href="#">СпортLife</a>
+                        <a href="#">Соціально-психологічна підтримка</a>
+                        <a href="#">Протидія булінгу</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Методична</span><span>робота</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">На допомогу вчителю</a>
+                        <a href="#">Підвищення кваліфікації</a>
+                        <a href="#">Атестація педпрацівників</a>
+                        <a href="#">Основні методичні заходи</a>
+                        <a href="#">Педагогічний Олімп</a>
+                        <a href="#">Методичні лайфхаки</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Інформаційна</span><span>сторінка</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Батькам</a>
+                        <a href="#">Учням</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#"><span>Інше</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Літературний сайт Володимира Малика</a>
+                        <a href="#">Лубенська міська рада</a>
+                        <a href="#">Міністерство освіти і науки України</a>
+                        <a href="#">Український центр оцінювання якості освіти</a>
+                        <a href="#">Харківський регіональний центр оцінювання якості освіти</a>
+                    </div>
+                </div>
             </div>
             <div class="language-switcher">
-                <img src="img/хедер вибір мови.png" alt="language switcher">
+                <img src="img/language_change.png" alt="language switcher">
             </div>
         </nav>
+        <hr />
     </header>
 
-    <hr />
-
-<!-- Background -->
     <div class="container">
         <div class="background">
             <div class="gradient-bg"></div>
@@ -61,5 +133,61 @@
             </div>
         </div>
     </div>
+
+
+
+<!-- Статистика -->
+    <div class="statistics-section">
+        <div class="statistics-content">
+            <div class="stat-item">
+                <h2 class="stat-number">780</h2>
+                <p class="stat-text">учнів здобувають освіту у нашому ліцеї</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="stat-number">60</h2>
+                <p class="stat-text">вчителів працюють у ліцеї на даний час</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="stat-number">46</h2>
+                <p class="stat-text">переможців національної програми обміну FLEX</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="stat-number">6</h2>
+                <p class="stat-text">учнів склали НМТ 2024 на 200 балів</p>
+            </div>
+        </div>
+    </div>
+
+ <!--Футер-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-section">
+                <h3 class="social-title">Слідкуйте за нашими оновленнями !</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <img src="img/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="img/YouTube.png" alt="YouTube">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="img/Facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="address-section">
+                <h3>Адреса</h3>
+                <p class="address-text">37500 м.Лубни Полтавської<br>області, вул. Монастирська, 36</p>
+            </div>
+            <div class="contacts-section">
+                <h3>Контакти</h3>
+                <p class="contacts-text">
+                   <a href="tel: (053) 617 08 38">(053) 617 08 38</a><br>
+                    <a href="mailto:schoolsuncity@ukr.net">schoolsuncity@ukr.net</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html> 
