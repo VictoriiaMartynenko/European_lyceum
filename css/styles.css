@@ -199,7 +199,7 @@ hr {
   }
   
   .section-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 32px;
     color: #182BA1;
     text-align: center;
@@ -208,7 +208,7 @@ hr {
   }
   
   .section-subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
     color: #4B555C;
     text-align: center;
@@ -265,7 +265,7 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
     text-align: center;
     width: 100%;
@@ -307,7 +307,7 @@ hr {
   }
   
   .faq-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 48px;
     color: #182BA1;
     margin-bottom: 40px;
@@ -338,7 +338,7 @@ hr {
   }
   
   .accordion-button span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     color: #FF5700;
     font-weight: 500;
@@ -370,7 +370,7 @@ hr {
   }
   
   .accordion-content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #6B7280;
@@ -564,7 +564,7 @@ hr {
   }
   
   .faq-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 48px;
     color: #182BA1;
     margin-bottom: 40px;
@@ -595,7 +595,7 @@ hr {
   }
   
   .accordion-button span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     color: #FF5700;
     font-weight: 500;
@@ -627,7 +627,7 @@ hr {
   }
   
   .accordion-content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #6B7280;
@@ -667,7 +667,7 @@ hr {
   }
   
   .teachers .number {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat Alternates';
       font-size: 14px;
       color: #000000;
       margin: 0;
@@ -721,7 +721,7 @@ hr {
   .total-staff p,
   .name p,
   .classes p {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat Alternates';
       font-size: 14px;
       color: #000000;
       margin: 0;
