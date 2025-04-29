@@ -1,0 +1,175 @@
+/* Стилі для сторінки новин */
+.news-main {
+    max-width: 1344px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.news-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news-header h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 42px;
+    color: #182BA1;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.news-header .subtitle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color: #4B555C;
+}
+
+.news-stream-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 48px;
+    color: #182BA1;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    padding-top: 0;
+}
+
+.news-container {
+    min-height: 400px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.news-item {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    display: flex;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.news-item:nth-child(odd) {
+    background: linear-gradient(to right, rgba(12, 24, 101, 0.85), rgba(56, 75, 194, 0.85));
+}
+
+.news-item:nth-child(even) {
+    background: linear-gradient(to right, rgba(204, 139, 106, 0.9), rgba(255, 109, 33, 1));
+}
+
+.news-content {
+    width: 70%;
+    padding: 32px 32px 32px 47px;
+    position: relative;
+    z-index: 2;
+}
+
+.news-item-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.news-item-title::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 176px; /* Висота від заголовка до кнопки */
+    width: 1px;
+    background-color: white;
+}
+
+.news-item-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    margin: 20px 0;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: rgba(225, 229, 235, 0.62);
+    padding: 8px 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-top: 8px;
+    position: relative;
+    width: 231px;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+.read-more-btn::after {
+    content: '→';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.news-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.news-item:nth-child(odd) .news-image::after {
+    background: linear-gradient(to bottom, transparent 50%, rgba(35, 47, 122, 0.6) 100%);
+}
+
+.news-item:nth-child(even) .news-image::after {
+    background: linear-gradient(to bottom, transparent 50%, rgba(255, 109, 33, 0.6) 100%);
+}
+
+.placeholder-message {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color: #4B555C;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.container .news-main {
+    padding-top: 0;
+    margin-top: 40px;
+}
+
+/* Спеціальне правило для фону сторінки новин */
+.container:has(.news-main) .background .gradient-bg {
+    background: none;
+    background-color: white;
+} 

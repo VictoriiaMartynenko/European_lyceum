@@ -1,0 +1,114 @@
+/* Стилі для сторінки фінансової звітності (використовуємо ті самі стилі що й для нормативних документів) */
+.regulatory-documents-main {
+    max-width: 1344px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+}
+
+.regulatory-documents-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 42px;
+    color: #182BA1;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.documents-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 800px;
+    margin: 0;
+    padding-left: 80px;
+}
+
+.section-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 34px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.year-section .section-title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 176%;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.useful-info-section,
+.year-section {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 40px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.document-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    width: 112px;
+    height: 20px;
+}
+
+.document-link::before {
+    display: none;
+}
+
+.link-icon {
+    display: none;
+}
+
+.link-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 112px;
+    height: 20px;
+}
+
+/* Спеціальне правило для фону сторінки фінансової звітності */
+.container:has(.regulatory-documents-main) .background .gradient-bg {
+    background: none;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .regulatory-documents-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .documents-sections {
+        gap: 40px;
+    }
+
+    .useful-info-section,
+    .year-section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+} 

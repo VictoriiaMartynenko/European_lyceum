@@ -9,104 +9,11 @@ body {
     overflow-x: hidden;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 1000;
-    background: rgba(24, 43, 161, 1);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.4s ease;
-}
-
-.header.hidden {
-    transform: translateY(-100%);
-}
-
-.nav-container {
-    width: 100%;
-    max-width: 1360px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    position: relative;
-    justify-content: space-between;
-    height: 68px;
-}
-
-.logo {
-    width: 52px;
-    height: 52px;
-    border-radius: 16px;
-    overflow: hidden;
-    flex-shrink: 0;
-    margin-right: 60px;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.nav-links {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    margin: 0;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 370;
-    line-height: 20px;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.nav-link:hover {
-    color: #E5E7EB;
-}
-
-.language-switcher {
-    width: 32px;
-    height: 38px;
-    border-radius: 5px;
-    overflow: hidden;
-    flex-shrink: 0;
-    margin-left: 60px;
-}
-
-.language-switcher img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-hr {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    padding-top: 60px; /* Змінено з 40px на 60px */
+    padding-top: 60px;
 }
 
 .background {
@@ -128,12 +35,7 @@ hr {
     z-index: 0;
 }
 
-/* Виключення градієнтного фону для новинної сторінки */
-.container:has(.news-main) .background .gradient-bg,
-.container:has(.regulatory-documents-main) .background .gradient-bg {
-    background: none;
-    background-color: white;
-}
+
 
 .content {
     max-width: 1400px;
@@ -197,44 +99,44 @@ hr {
     opacity: 0.8;
 }
 
-  /* Useful Functions Section */
-  .useful-functions {
+/* Useful Functions Section */
+.useful-functions {
     padding: 40px 0;
     width: 100%;
     max-width: 1172px;
     margin: 0 auto;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 34px;
     color: #000000;
     text-align: left;
     margin-bottom: 24px;
     font-weight: 700;
-  }
-  
-  .section-subtitle {
+}
+
+.section-subtitle {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
     color: #4B555C;
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  .cards-container {
+}
+
+.cards-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-  
-  .cards-row {
+}
+
+.cards-row {
     display: flex;
     gap: 40px;
     justify-content: center;
-  }
-  
-  .card {
+}
+
+.card {
     position: relative;
     width: 514px;
     height: 331px;
@@ -243,20 +145,20 @@ hr {
     display: block;
     text-decoration: none;
     transition: transform 0.3s ease;
-  }
-  
-  .wide-card {
+}
+
+.wide-card {
     width: 100%;
     height: 331px;
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .card-gradient {
+}
+
+.card-gradient {
     position: absolute;
     top: 0;
     left: 0;
@@ -264,9 +166,9 @@ hr {
     bottom: 0;
     background: linear-gradient(to top, rgba(24, 43, 161, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
     border-radius: 20px;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -279,60 +181,62 @@ hr {
     margin: 0;
     z-index: 1;
     font-weight: 500;
-  }
-  
-  /* Hover Effects */
-  .card:hover {
+}
+
+/* Hover Effects */
+.card:hover {
     transform: scale(1.02);
-  }
-  
-  .card:hover .card-gradient {
+}
+
+.card:hover .card-gradient {
     background: linear-gradient(to top, rgba(24, 43, 161, 0.9) 0%, rgba(255, 255, 255, 0.05) 100%);
   } 
+  
+
   /* FAQ Section */
   .faq-section {
     padding: 60px 0;
     background: #FFFFFF;
-  }
-  
-  .faq-container {
+}
+
+.faq-container {
     max-width: 1352px;
     margin: 0 auto;
     display: flex;
     gap: 60px;
-  }
-  
-  .faq-image {
+}
+
+.faq-image {
     width: 524px;
     height: 1176px;
     background: #DDDEE0;
     border-radius: 18px;
-  }
-  
-  .faq-content {
+}
+
+.faq-content {
     flex: 1;
-  }
-  
-  .faq-title {
+}
+
+.faq-title {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 48px;
     color: #182BA1;
     margin-bottom: 40px;
-  }
-  
-  .accordion {
+}
+
+.accordion {
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-  
-  .accordion-item {
+}
+
+.accordion-item {
     background: #F8F8F8;
     border-radius: 18px;
     overflow: hidden;
-  }
-  
-  .accordion-button {
+}
+
+.accordion-button {
     width: 100%;
     padding: 20px 30px;
     background: none;
@@ -342,9 +246,9 @@ hr {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .accordion-button span {
+}
+
+.accordion-button span {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     color: #FF5700;
@@ -382,10 +286,10 @@ hr {
     line-height: 1.5;
     color: #6B7280;
     margin: 0;
-  }
-  
-  /* Add JavaScript functionality */
-  .accordion-item.active .accordion-button {
+}
+
+/* Add JavaScript functionality */
+.accordion-item.active .accordion-button {
     background: #F8F8F8;
   } 
   
@@ -416,9 +320,7 @@ hr {
       max-height: 200px;
   }
 
-
-
-
+  
 /* статистика */
 .statistics-section {
     height: 451px;
@@ -469,866 +371,3 @@ hr {
     line-height: 1.4;
     margin: 0;
 }
-
-@media (max-width: 1400px) {
-    .statistics-content {
-        max-width: 1200px;
-        padding: 155px 50px 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .statistics-content {
-        max-width: 992px;
-    }
-    
-    .stat-number {
-        font-size: 42px;
-    }
-    
-    .stat-text {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 992px) {
-    .statistics-content {
-        max-width: 768px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-    
-    .stat-item {
-        width: calc(50% - 30px);
-    }
-}
-
-@media (max-width: 768px) {
-    .statistics-section {
-        height: auto;
-        padding-bottom: 50px;
-    }
-    
-    .statistics-section::before {
-        height: 100%;
-    }
-    
-    .statistics-content {
-        max-width: 576px;
-        padding: 100px 20px 50px;
-    }
-    
-    .stat-item {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .stat-number {
-        font-size: 36px;
-    }
-    
-    .stat-text {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 576px) {
-    .statistics-content {
-        padding: 80px 15px 40px;
-    }
-    
-    .stat-number {
-        font-size: 32px;
-    }
-    
-    .stat-text {
-        font-size: 14px;
-    }
-}
-
-/* FAQ Section */
-.faq-section {
-    padding: 60px 0;
-    background: #FFFFFF;
-  }
-  
-  .faq-container {
-    max-width: 1352px;
-    margin: 0 auto;
-    display: flex;
-    gap: 60px;
-  }
-  
-  .faq-image {
-    width: 524px;
-    height: 1176px;
-    background: #DDDEE0;
-    border-radius: 18px;
-  }
-  
-  .faq-content {
-    flex: 1;
-  }
-  
-  .faq-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 48px;
-    color: #182BA1;
-    margin-bottom: 40px;
-  }
-  
-  .accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .accordion-item {
-    background: #F8F8F8;
-    border-radius: 18px;
-    overflow: hidden;
-  }
-  
-  .accordion-button {
-    width: 100%;
-    padding: 20px 30px;
-    background: none;
-    border: none;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .accordion-button span {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
-    color: #FF5700;
-    font-weight: 500;
-  }
-  
-  .arrow {
-    width: 20px;
-    height: 10px;
-    border-left: 2px solid #AD958B;
-    border-bottom: 2px solid #AD958B;
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
-  }
-  
-  .accordion-item.active .arrow {
-    transform: rotate(135deg);
-  }
-  
-  .accordion-content {
-    padding: 0 30px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  .accordion-item.active .accordion-content {
-    padding: 0 30px 20px;
-    max-height: 200px;
-  }
-  
-  .accordion-content p {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #6B7280;
-    margin: 0;
-  }
-  
-  /* Add JavaScript functionality */
-  .accordion-item.active .accordion-button {
-    background: #F8F8F8;
-  } 
-  
-  .arrow {
-      width: 12px;
-      height: 12px;
-      border: solid #AD958B;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-      transition: transform 0.3s ease;
-      margin-top: -6px;
-  }
-  
-  .accordion-item.active .arrow {
-      transform: rotate(-135deg);
-      margin-top: 6px;
-  }
-  
-  .accordion-content {
-      padding: 0 30px;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.3s ease;
-  }
-  
-  .accordion-item.active .accordion-content {
-      padding: 0 30px 20px;
-      max-height: 200px;
-  }
-  
-  .teachers .number {
-      font-family: 'Montserrat Alternates';
-      font-size: 14px;
-      color: #000000;
-      margin: 0;
-  }
-  
-  .language {
-      width: 151px;
-      min-height: 95px;
-  }
-  
-  .license {
-      width: 210px;
-      min-height: 158px;
-  }
-  
-  .total-staff {
-      width: 183px;
-      min-height: 100px;
-  }
-  
-  .anthem {
-      width: 147px;
-      min-height: 61px;
-  }
-  
-  .name {
-      width: 192px;
-      min-height: 111px;
-  }
-  
-  .classes {
-      width: 154px;
-      min-height: 111px;
-  }
-  
-  .language h3,
-  .license h3,
-  .total-staff h3,
-  .anthem h3,
-  .name h3,
-  .classes h3 {
-      font-family: 'Montserrat Alternates';
-      font-weight: 700;
-      font-size: 20px;
-      color: rgba(12, 24, 101, 0.85);
-      margin-bottom: 16px;
-  }
-  
-  .language p,
-  .license p,
-  .total-staff p,
-  .name p,
-  .classes p {
-      font-family: 'Montserrat Alternates';
-      font-size: 14px;
-      color: #000000;
-      margin: 0;
-  }
-  
-  .about-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-content: flex-start;
-  }
-  
-  .info-card {
-      background: #FFFFFF;
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-
-/* футер */
-.footer {
-    width: 100%;
-    height: 364px;
-    background-color: #182BA1;
-    color: white;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-.footer-content {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 70px;
-}
-
-.social-section {
-    position: absolute;
-    left: 89px;
-    top: 70px;
-    width: 373px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 55px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-
-.social-icons {
-    display: flex;
-    gap: 52px;
-    justify-content: center;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Instagram icon */
-.social-icon:nth-child(1) {
-    width: 53px;
-    height: 53px;
-}
-
-.social-icon:nth-child(1) img {
-    width: 53px;
-    height: 53px;
-}
-
-/* YouTube icon */
-.social-icon:nth-child(2) {
-    width: 79px;
-    height: 53px;
-}
-
-.social-icon:nth-child(2) img {
-    width: 79px;
-    height: 53px;
-}
-
-/* Facebook icon */
-.social-icon:nth-child(3) {
-    width: 30px;
-    height: 53px;
-}
-
-.social-icon:nth-child(3) img {
-    width: 30px;
-    height: 53px;
-}
-
-.address-section {
-    position: absolute;
-    left: 576px;
-    top: 105px;
-    width: 432px;
-}
-
-.contacts-section {
-    position: absolute;
-    left: 1094px;
-    top: 113px;
-    width: 290px;
-}
-
-.footer h3 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 24px;
-    color: white;
-}
-
-.address-text, .contacts-text {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-}
-
-.contacts-text a {
-    color: white;
-    text-decoration: underline;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 1400px) {
-    .footer-content {
-        padding: 0 20px;
-    }
-    
-    .social-section,
-    .address-section,
-    .contacts-section {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 88px;
-    }
-}
-
-@media (max-width: 992px) {
-    .footer {
-        height: auto;
-        padding: 30px 0;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .social-icons {
-        margin-left: 0;
-    }
-    
-    .social-title {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .address-section,
-    .contacts-section {
-        width: 100%;
-        max-width: 500px;
-    }
-    
-    .social-section {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        max-width: 373px;
-    }
-}
-
-@media (max-width: 576px) {
-    .social-title {
-        font-size: 20px;
-        margin-bottom: 25px;
-    }
-    
-    .social-icons {
-        gap: 30px;
-    }
-    
-    .footer h3 {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-    
-    .address-text,
-    .contacts-text {
-        font-size: 16px;
-    }
-}
-
-.nav-item {
-    position: relative;
-    display: inline-block;
-}
-
-.nav-item.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    min-width: 240px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1001;
-    border-radius: 8px;
-    padding: 8px 0;
-    margin-top: 10px;
-    display: none;
-}
-
-/* Довші списки з прокруткою для "Освітній процес" та "Методична робота" */
-.nav-item.dropdown:nth-child(5) .dropdown-content,
-.nav-item.dropdown:nth-child(6) .dropdown-content {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.dropdown-content a {
-    color: #182BA1;
-    text-decoration: none;
-    display: block;
-    padding: 12px 16px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    transition: background-color 0.3s, color 0.3s;
-    white-space: normal;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #182BA1;
-    color: white;
-}
-
-.nav-item.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Прозорий "міст" для запобігання зникнення меню */
-.nav-item.dropdown::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: transparent;
-}
-
-.dropdown-content::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: transparent;
-}
-
-/* Стилізація скролбару для випадаючих меню */
-.dropdown-content::-webkit-scrollbar {
-    width: 8px;
-}
-
-.dropdown-content::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.dropdown-content::-webkit-scrollbar-thumb {
-    background: #182BA1;
-    border-radius: 4px;
-}
-
-.dropdown-content::-webkit-scrollbar-thumb:hover {
-    background: #111e70;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Розмір прокрутки та відступ для заголовка */
-#faq-section {
-    scroll-margin-top: 80px; /* Відступ зверху, щоб не ховати за хедером */
-}
-
-/* Стилі для сторінки новин */
-.news-main {
-    max-width: 1344px;
-    margin: 0 auto 60px;
-    padding: 40px 20px;
-    position: relative;
-    z-index: 2;
-    margin-top: 40px;
-}
-
-.news-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.news-header h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 42px;
-    color: #182BA1;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.news-header .subtitle {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    color: #4B555C;
-}
-
-.news-stream-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 48px;
-    color: #182BA1;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 700;
-    padding-top: 0;
-}
-
-.news-container {
-    min-height: 400px;
-}
-
-.news-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.news-item {
-    width: 100%;
-    height: 240px;
-    position: relative;
-    display: flex;
-    border-radius: 0;
-    overflow: hidden;
-}
-
-.news-item:nth-child(odd) {
-    background: linear-gradient(to right, rgba(12, 24, 101, 0.85), rgba(56, 75, 194, 0.85));
-}
-
-.news-item:nth-child(even) {
-    background: linear-gradient(to right, rgba(204, 139, 106, 0.9), rgba(255, 109, 33, 1));
-}
-
-.news-content {
-    width: 70%;
-    padding: 32px 32px 32px 47px;
-    position: relative;
-    z-index: 2;
-}
-
-.news-item-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24px;
-    color: white;
-    margin-bottom: 12px;
-    font-weight: 600;
-    position: relative;
-}
-
-.news-item-title::before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: 0;
-    height: 176px; /* Висота від заголовка до кнопки */
-    width: 1px;
-    background-color: white;
-}
-
-.news-item-text {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: white;
-    margin: 20px 0;
-}
-
-.read-more-btn {
-    display: inline-block;
-    background-color: rgba(225, 229, 235, 0.62);
-    padding: 8px 20px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    margin-top: 8px;
-    position: relative;
-    width: 231px;
-    height: 33px;
-    box-sizing: border-box;
-}
-
-.read-more-btn::after {
-    content: '→';
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.news-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.news-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.news-image::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.news-item:nth-child(odd) .news-image::after {
-    background: linear-gradient(to bottom, transparent 50%, rgba(35, 47, 122, 0.6) 100%);
-}
-
-.news-item:nth-child(even) .news-image::after {
-    background: linear-gradient(to bottom, transparent 50%, rgba(255, 109, 33, 0.6) 100%);
-}
-
-.placeholder-message {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    color: #4B555C;
-    text-align: center;
-    padding: 100px 0;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-}
-
-.container .news-main {
-    padding-top: 0;
-    margin-top: 40px;
-}
-
-/* Стилі для сторінки нормативних документів */
-.regulatory-documents-main {
-    max-width: 1344px;
-    margin: 0 auto 60px;
-    padding: 40px 20px;
-    position: relative;
-    z-index: 2;
-    margin-top: 0; /* Змінено з 40px на 0, оскільки відступ вже є в контейнері */
-}
-
-.regulatory-documents-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 42px;
-    color: #182BA1;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
-}
-
-.documents-sections {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    max-width: 800px;
-    margin: 0;
-    padding-left: 80px;
-}
-
-.section-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 34px;
-    color: #000000;
-    text-align: left;
-    margin-bottom: 24px;
-    font-weight: 700;
-}
-
-.year-section .section-title {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 176%;
-    color: #000;
-    margin-bottom: 24px;
-}
-
-.useful-info-section,
-.year-section {
-    background: none;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-    margin-bottom: 40px;
-}
-
-.links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.document-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000000;
-    transition: color 0.3s ease;
-    font-size: 20px;
-    width: 112px;
-    height: 20px;
-}
-
-.document-link::before {
-    display: none;
-}
-
-.link-icon {
-    display: none;
-}
-
-.link-text {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    width: 112px;
-    height: 20px;
-}
-
-@media (max-width: 768px) {
-    .regulatory-documents-title {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
-    .documents-sections {
-        gap: 40px;
-    }
-
-    .useful-info-section,
-    .year-section {
-        padding: 20px;
-    }
-
-    .section-title {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-}
-

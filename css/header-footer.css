@@ -1,0 +1,308 @@
+/* Стилі для хедера */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    background: rgba(24, 43, 161, 1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    justify-content: space-between;
+    height: 68px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 60px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 370;
+    line-height: 20px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #E5E7EB;
+}
+
+.language-switcher {
+    width: 32px;
+    height: 38px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-left: 60px;
+}
+
+.language-switcher img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для навігаційних елементів та випадаючого меню */
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    min-width: 240px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 8px;
+    padding: 8px 0;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Довші списки з прокруткою для "Освітній процес" та "Методична робота" */
+.nav-item.dropdown:nth-child(5) .dropdown-content,
+.nav-item.dropdown:nth-child(6) .dropdown-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: #182BA1;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: normal;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #182BA1;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Прозорий "міст" для запобігання зникнення меню */
+.nav-item.dropdown::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+}
+
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+}
+
+/* Стилізація скролбару для випадаючих меню */
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #182BA1;
+    border-radius: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #111e70;
+}
+
+/* Стилі для футера */
+.footer {
+    width: 100%;
+    height: 364px;
+    background-color: #182BA1;
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 70px;
+}
+
+.social-section {
+    position: absolute;
+    left: 88px;
+    top: 88px;
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 62px;
+    color: white;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 52px;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instagram icon */
+.social-icon:nth-child(1) {
+    width: 53px;
+    height: 53px;
+}
+
+.social-icon:nth-child(1) img {
+    width: 53px;
+    height: 53px;
+}
+
+/* YouTube icon */
+.social-icon:nth-child(2) {
+    width: 79px;
+    height: 53px;
+}
+
+.social-icon:nth-child(2) img {
+    width: 79px;
+    height: 53px;
+}
+
+/* Facebook icon */
+.social-icon:nth-child(3) {
+    width: 30px;
+    height: 53px;
+}
+
+.social-icon:nth-child(3) img {
+    width: 30px;
+    height: 53px;
+}
+
+.address-section {
+    position: absolute;
+    left: 575px;
+    top: 123px;
+    width: 432px;
+}
+
+.contacts-section {
+    position: absolute;
+    left: 1093px;
+    top: 131px;
+    width: 290px;
+}
+
+.footer h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.address-text, .contacts-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+
+.contacts-text a {
+    color: white;
+    text-decoration: underline;
+}
