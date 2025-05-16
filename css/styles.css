@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     overflow-x: hidden;
+    margin-bottom: 0;
 }
 
 .container {
@@ -34,8 +35,6 @@ body {
     background: linear-gradient(180deg, #182ba1 0%, #8e99dd 84%, #9ea8e5 100%);
     z-index: 0;
 }
-
-
 
 .content {
     max-width: 1400px;
@@ -195,8 +194,12 @@ body {
 
   /* FAQ Section */
   .faq-section {
-    padding: 60px 0;
+    padding: 60px 0 20px;
     background: #FFFFFF;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 60px;
+    min-height: 800px;
 }
 
 .faq-container {
@@ -204,17 +207,38 @@ body {
     margin: 0 auto;
     display: flex;
     gap: 60px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: static;
 }
 
 .faq-image {
-    width: 524px;
-    height: 1176px;
-    background: #DDDEE0;
-    border-radius: 18px;
+    position: absolute;
+    width: 450px;
+    height: 900px;
+    top: 0;
+    left: 55px;
+    border-radius: 0 18px 18px 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.firebird-image {
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    display: block;
 }
 
 .faq-content {
-    flex: 1;
+    flex: 0 0 auto;
+    width: 60%;
+    max-width: 750px;
+    margin-left: auto;
 }
 
 .faq-title {
@@ -370,4 +394,12 @@ body {
     font-size: 18px;
     line-height: 1.4;
     margin: 0;
+}
+
+/* Змінюємо параметри футера для зменшення проміжку */
+.footer {
+    margin-top: 0;
+    padding-top: 30px;
+    position: relative;
+    z-index: 2;
 }

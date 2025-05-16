@@ -56,7 +56,7 @@
                 <a class="nav-link" href="#"><span>Освітній</span><span>процес</span></a>
                 <div class="dropdown-content">
                     <a href="intellect.html">Інтелект та обдарованість</a>
-                    <a href="#">Учнівське самоврядування</a>
+                    <a href="student-self-government.html">Учнівське самоврядування</a>
                     <a href="#">Проєктно-дослідницька діяльність</a>
                     <a href="#">Національно-патріотичне виховання</a>
                     <a href="#">Критерії оцінювання</a>
@@ -72,12 +72,12 @@
             <div class="nav-item dropdown">
                 <a class="nav-link" href="#"><span>Методична</span><span>робота</span></a>
                 <div class="dropdown-content">
-                    <a href="#">На допомогу вчителю</a>
-                    <a href="#">Підвищення кваліфікації</a>
-                    <a href="#">Атестація педпрацівників</a>
-                    <a href="#">Основні методичні заходи</a>
-                    <a href="#">Педагогічний Олімп</a>
-                    <a href="#">Методичні лайфхаки</a>
+                    <a href="teacher-help.html">На допомогу вчителю</a>
+                    <a href="qualification-improvement.html">Підвищення кваліфікації</a>
+                    <a href="teacher-certification.html">Атестація педпрацівників</a>
+                    <a href="methodical-events.html">Основні методичні заходи</a>
+                    <a href="pedagogical-olympus.html">Педагогічний Олімп</a>
+                    <a href="methodical-lifehacks.html">Методичні лайфхаки</a>
                 </div>
             </div>
             
@@ -115,6 +115,9 @@
             <div class="year-selector">
                 <span class="year-text">Рік</span>
                 <div class="year-dropdown-icon"></div>
+                <div class="year-dropdown-content">
+                    <a href="#">2025</a>
+                </div>
             </div>
             
             <div class="events-accordion">
@@ -147,7 +150,7 @@
                         <div class="event-content-wrapper">
                             <div class="event-text">
                                 <div class="content-divider"></div>
-                                <p>Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.</p>
+                                <p>Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.</p>
                             </div>
                             <div class="event-image">
                                 <img src="img/news-placeholder.jpg" alt="Event image">
@@ -166,7 +169,7 @@
                         <div class="event-content-wrapper">
                             <div class="event-text">
                                 <div class="content-divider"></div>
-                                <p>Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.</p>
+                                <p>Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.</p>
                             </div>
                             <div class="event-image">
                                 <img src="img/news-placeholder.jpg" alt="Event image">
@@ -182,7 +185,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="social-section">
-                <h3 class="social-title">Слідкуйте за нашими оновленнями !</h3>
+                <h3 class="social-title">Слідкуйте за нашими<br>оновленнями !</h3>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/european_lyceum_?igsh=OHlpMzNmaWU1bnQx" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <img src="img/Instagram.png" alt="Instagram">
@@ -208,28 +211,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // JavaScript для роботи акордеону
-        document.addEventListener('DOMContentLoaded', function() {
-            const eventItems = document.querySelectorAll('.event-item');
-            
-            eventItems.forEach(item => {
-                const header = item.querySelector('.event-header');
-                
-                header.addEventListener('click', function() {
-                    // Закриваємо всі активні елементи крім поточного
-                    eventItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    
-                    // Перемикаємо клас 'active' для поточного елемента
-                    item.classList.toggle('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html> 
