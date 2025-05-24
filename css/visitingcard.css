@@ -1,0 +1,428 @@
+/* Наша візитка секція */
+.section.our-card {
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(187, 188, 192, 0.3) 61.92%, #d5e0f0 100%);
+  width: 100%;
+  height: 819px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -83px;
+  padding-top: 83px;
+  margin-bottom: 80px;
+}
+
+.our-card-title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 650px;
+  font-size: 50px;
+  line-height: 60px;
+  color: #182BA1;
+  margin-left: 235px;
+  margin-top: 160px;
+  margin-bottom: 32px;
+}
+
+.our-card-content {
+  display: flex;
+  margin-left: 122px;
+  margin-top: -120px;
+  gap: 48px;
+  position: relative;
+}
+
+.our-card-image-container {
+  width: 710px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.our-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-top: 120px;
+  margin-left: -30px;
+}
+
+.our-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 562px;
+  height: 578px;
+}
+
+.main-info-row {
+  display: flex;
+  gap: 16px;
+}
+
+.main-info {
+  width: 356px;
+  height: 140px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h2 {
+  color: rgba(12, 24, 102, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-content h2 span {
+  display: block;
+}
+
+.info-logo {
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+}
+
+.specialization {
+  width: 190px;
+  height: 140px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.staff-info-row {
+  display: flex;
+  gap: 16px;
+}
+
+.staff-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 386px;
+}
+
+.info-row {
+  display: flex;
+  gap: 16px;
+}
+
+.teachers, .anthem {
+  width: 170px;
+  height: 72px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px 16px 16px 16px;
+}
+
+.total-staff, .language {
+  width: 170px;
+  height: 82px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 3px 16px 16px 16px;
+}
+
+.name {
+  width: 170px;
+  height: 82px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px 16px 16px 16px;
+}
+
+.classes {
+  width: 170px;
+  height: 82px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 3px 16px 16px 16px;
+}
+
+.students {
+  width: 190px;
+  height: 82px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 3px 16px 16px 16px;
+}
+
+.license {
+  width: 190px;
+  height: 170px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 11px 16px 16px 16px;
+  margin-left: -32px;
+}
+
+.contacts {
+  width: 562px;
+  height: 138px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 16px 16px 16px 61px;
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.address, .contact-info {
+  flex: 1;
+}
+
+.info-block h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: rgba(12, 24, 101, 0.85);
+  margin-bottom: 8px;
+}
+
+.info-block p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #000;
+}
+
+.info-block p a {
+  color: #000000;
+  text-decoration: underline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.info-content .location {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.info-content .motto {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #000;
+  white-space: nowrap;
+}
+
+/* Територія обслуговування */
+.service-area {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.service-area-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  text-align: center;
+  color: #182ba1;
+  margin: 45px 0 30px;
+}
+
+.service-area-content {
+  width: 100%;
+  height: 314px;
+  position: relative;
+  margin: 0 auto;
+  background: rgba(24, 43, 161, 0.6);
+  padding: 36px 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+}
+
+.address-column {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.address-block {
+  width: 400px;
+  height: 50px;
+  background: #F8F8F8;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.address-block p {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.address p {
+  line-height: 1.5;
+}
+
+/* Секція "В ліцеї працюють" */
+.staff-title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #182BA1;
+  margin: 0 0 60px 0;
+}
+
+.staff-content {
+  width: 1400px;
+  height: 650px;
+  margin: 130px auto 0;
+  background: #ebebeb;
+  border-radius: 30px;
+  padding: 60px 60px 40px;
+  position: relative;
+}
+
+.staff-item {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 15px 0;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+  position: relative;
+  width: 1280px;
+}
+
+.staff-marker {
+  width: 20px;
+  height: 19px;
+  background-color: #FF5700;
+  border-radius: 50%;
+}
+
+.staff-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.staff-name {
+  font-size: 28px;
+  color: rgba(12, 24, 102, 0.85);
+  font-weight: 700;
+  margin-left: -20px;
+}
+
+.staff-description {
+  font-size: 18px;
+  color: #000000;
+  text-align: right;
+}
+
+/* Секція "Матеріальна база" */
+.facilities-title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #182BA1;
+  text-align: center;
+  margin: 100px 0 40px;
+}
+
+.facilities-content {
+  display: flex;
+  gap: 100px;
+  width: 1274px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.facilities-image {
+  width: 696px;
+  height: 522px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: -10px;
+}
+
+.facilities-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facilities-info {
+  flex: 1;
+  padding-top: 16px;
+}
+
+.facilities-subtitle {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.facilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.check-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.facility-item p {
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+#facilities {
+  margin-bottom: 100px;
+}

@@ -101,41 +101,33 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('No event-items found on page');
     }
 
-    // Обробник для випадаючого списку року при наведенні
-    const yearSelector = document.querySelector('.year-selector');
+    // Обробка кнопки зі спадним списком
+    const yearButton = document.querySelector('.year-button');
     const yearDropdown = document.querySelector('.year-dropdown-content');
     
-    if (yearSelector && yearDropdown) {
-        // Відкриття списку при наведенні на кнопку
-        yearSelector.addEventListener('mouseenter', function() {
-            yearDropdown.classList.add('active');
+    if (yearButton && yearDropdown) {
+        yearButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            yearButton.classList.toggle('active');
+            yearDropdown.classList.toggle('active');
         });
-        
-        // Закриття списку при відведенні курсору
-        yearSelector.addEventListener('mouseleave', function() {
-            setTimeout(() => {
-                if (!yearDropdown.matches(':hover')) {
-                    yearDropdown.classList.remove('active');
-                }
-            }, 100);
+
+        // Закриваємо список при кліку поза ним
+        document.addEventListener('click', function(e) {
+            if (!yearButton.contains(e.target) && !yearDropdown.contains(e.target)) {
+                yearButton.classList.remove('active');
+                yearDropdown.classList.remove('active');
+            }
         });
-        
-        // Забезпечуємо, щоб список не закривався, поки курсор на ньому
-        yearDropdown.addEventListener('mouseenter', function() {
-            yearDropdown.classList.add('active');
-        });
-        
-        yearDropdown.addEventListener('mouseleave', function() {
-            yearDropdown.classList.remove('active');
-        });
-        
-        // Обробник для вибору року
-        const yearLinks = document.querySelectorAll('.year-dropdown-content a');
+
+        // Обробка вибору пункту меню
+        const yearLinks = yearDropdown.querySelectorAll('a');
         yearLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                const year = this.textContent;
-                document.querySelector('.year-text').textContent = year;
+                const text = this.textContent;
+                document.querySelector('.year-text').textContent = text;
+                yearButton.classList.remove('active');
                 yearDropdown.classList.remove('active');
             });
         });

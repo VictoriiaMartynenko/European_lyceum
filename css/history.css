@@ -1,0 +1,182 @@
+/* Стилі для сторінки історії закладу */
+
+.history-content {
+    max-width: 1298px;
+    margin: 0 auto;
+    padding: 90px 20px 40px;
+}
+
+/* Заголовок секції */
+.section-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #182BA1;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Блоки з історією */
+.history-block {
+    display: flex;
+    margin-bottom: 60px;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.history-image {
+    width: 380px;
+    height: 260px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.history-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history-text {
+    width: 560px;
+    min-height: 240px;
+    background-color: rgba(24, 43, 161, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.history-block:nth-child(3) .history-text {
+    width: 647px;
+}
+
+.history-block:nth-child(4) .history-text {
+    width: 942px;
+}
+
+.history-text p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Адаптивність */
+@media (max-width: 1300px) {
+    .history-content {
+        padding: 70px 15px 40px;
+        max-width: 100%;
+    }
+    
+    .history-text, 
+    .history-block:nth-child(3) .history-text,
+    .history-block:nth-child(4) .history-text {
+        width: auto;
+        flex: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .history-title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .history-tabs {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .tab-link {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .history-image {
+        width: 100%;
+        max-width: 380px;
+    }
+    
+    .history-text {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+    
+    .history-title {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+/* Медіа-запити для адаптивності */
+@media (max-width: 1024px) {
+  .history-block {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .history-image {
+      margin-bottom: 20px;
+  }
+  
+  .history-text {
+      width: 100% !important;
+      max-width: 90%;
+  }
+  
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .social-section, .address-section, .contacts-section {
+      margin-bottom: 20px;
+  }
+  
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .history-image {
+      flex: 0 0 300px;
+      height: 200px;
+  }
+  
+  .history-text {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-image {
+      flex: 0 0 260px;
+      height: 180px;
+  }
+  
+  .history-text {
+      padding: 15px;
+  }
+} 
+

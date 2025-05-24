@@ -1,0 +1,445 @@
+/* Інноваційна діяльність (головна) */
+.innovation-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 83px 0;
+  overflow: hidden;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innovation-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center,#182BA1 0%,#8E99DD 83.17%,#9EA8E5 100%);
+  z-index: -1;
+}
+
+.innovation-title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.innovation-content {
+  display: flex;
+  gap: 65px;
+  margin: 0 auto;
+  max-width: 1338px;
+  height: 540px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 29px 65px;
+  margin: 0 51px;
+}
+
+.innovation-image {
+  flex: 0 0 350px;
+  margin-top: -12px;
+  margin-left: 36px;
+}
+
+.innovation-image img {
+  width: 350px;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.innovation-text {
+  flex: 1;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #E5E7EB;
+  padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .innovation-content {
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 30px;
+  }
+
+  .innovation-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+
+  .innovation-image img {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .innovation-text {
+    font-size: 24px;
+  }
+
+  .innovation-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .innovation-content {
+    padding: 20px;
+    margin: 0 20px;
+  }
+
+  .innovation-title {
+    font-size: 36px;
+  }
+
+  .innovation-text {
+    font-size: 18px;
+  }
+
+  .innovation-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .innovation-content {
+    padding: 15px;
+    margin: 0 15px;
+  }
+
+  .innovation-title {
+    font-size: 28px;
+  }
+
+  .innovation-text {
+    font-size: 16px;
+  }
+
+  .innovation-image img {
+    max-height: 300px;
+  }
+}
+
+/* Стилі для секції "Дівчата STEM" */
+.stem-girls-section {
+    margin: 80px auto;
+    padding: 0 20px;
+    max-width: 1354px;
+}
+
+.stem-container {
+    max-width: 1354px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 50px 45px;
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(217,217,217,0.4) 54.8%, rgba(115,115,115,0.2) 100%);
+    position: relative;
+}
+
+.stem-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    color: #182BA1;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    max-width: 1178px;
+}
+
+.stem-subtitle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    width: 100%;
+}
+
+.stem-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.stem-text .stem-term {
+    font-weight: 700;
+}
+
+.stem-orange {
+    color: #182BA1;
+    font-weight: 400;
+}
+
+.stem-abbreviation {
+    padding-left: 94px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.stem-abbreviation:before {
+    content: '';
+    position: absolute;
+    left: 70px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+}
+
+.stem-abbreviation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stem-abbreviation li {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.stem-term {
+    font-weight: 700;
+}
+
+.stem-description {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.stem-description p {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.stem-description p strong {
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .stem-container {
+        padding: 30px;
+    }
+    
+    .stem-title {
+        font-size: 32px;
+    }
+    
+    .stem-abbreviation {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stem-title {
+        font-size: 28px;
+    }
+    
+    .stem-subtitle, 
+    .stem-text, 
+    .stem-abbreviation li, 
+    .stem-description {
+        font-size: 16px;
+    }
+}
+
+/* Стилі для секції "Українсько-швейцарський проект" */
+.health-project-section {
+    margin: 60px auto;
+    padding: 0 20px;
+    max-width: 1354px;
+}
+
+.health-container {
+    max-width: 1354px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 50px 35px;
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(217,217,217,0.4) 54.8%, rgba(115,115,115,0.2) 100%);
+    position: relative;
+}
+
+.health-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    color: #182BA1;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    max-width: 1178px;
+}
+
+.health-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.health-row {
+    display: flex;
+    gap: 60px;
+    padding-left: 50px;
+}
+
+.top-row {
+    margin-bottom: 15px;
+}
+
+.health-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.health-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    background-color: #F0F0F0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-image {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.right-image {
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.circle-image {
+    /* Плейсхолдер для кола здоров'я */
+    background-color: #FFFFF0;
+}
+
+.logo-image {
+    /* Плейсхолдер для логотипу */
+    background-color: #5368E3;
+}
+
+.health-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-text {
+    width: 500px;
+    height: 450px;
+    margin-left: 20px;
+}
+
+.left-text {
+    width: 400px;
+    height: 350px;
+}
+
+.health-text-box {
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.light-blue {
+    background-color: rgba(24, 43, 161, 0.2);
+}
+
+.dark-blue {
+    background-color: rgba(24, 43, 161, 0.2);
+}
+
+.health-text-box p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #000;
+}
+
+@media (max-width: 1400px) {
+    .health-container {
+        padding: 30px;
+    }
+    
+    .left-image, .right-text {
+        width: 50%;
+        height: auto;
+    }
+    
+    .left-text, .right-image {
+        width: 50%;
+        height: auto;
+    }
+    
+    .health-image {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .health-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .health-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .left-image, .right-text, .left-text, .right-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .health-text-box {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .health-text-box p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .health-container {
+        padding: 20px;
+    }
+    
+    .health-title {
+        font-size: 26px;
+    }
+    
+    .health-text-box p {
+        font-size: 14px;
+    }
+}

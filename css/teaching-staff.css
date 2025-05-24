@@ -1,0 +1,626 @@
+/* Адміністрація - підзаголовок */
+.administration-title {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+/* Педагогічний колектив */
+.pedagogical-title {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  padding-top: 60px;
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #182BA1;
+}
+
+/* Контейнер для карток адміністрації */
+.admin-cards-container {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Картка адміністратора */
+.admin-card {
+  display: flex;
+  background-color: rgba(15, 28, 101, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  position: relative;
+}
+
+/* Фото адміністратора */
+.admin-photo {
+  width: 160px;
+  height: 226px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 50px;
+  margin-top: -3px;
+  margin-left: 15px;
+}
+
+.admin-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Контейнер для інформації адміністратора */
+.admin-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 280px;
+}
+
+/* Ім'я адміністратора */
+.admin-name {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/* Позиція адміністратора */
+.admin-position {
+  background-color: #182BA1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  width: 260px;
+  position: relative;
+  top: -20px;
+}
+/* Блок з біографією */
+.admin-bio {
+  width: 510px;
+  height: 220px;
+  margin-left: auto;
+  padding: 15px;
+  position: relative;
+  border: none;
+}
+
+.admin-bio::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  height: 90%;
+  width: 1px;
+  background-color: #000000;
+}
+
+.admin-bio p {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding-left: 30px;
+}
+
+/* Адаптивність для карток */
+@media (max-width: 1200px) {
+  .admin-card {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+  }
+  
+  .admin-photo {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  
+  .admin-info {
+      margin-bottom: 20px;
+  }
+  
+  .admin-bio {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+.history-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Title - "Педагогічний колектив" */
+.main-title {
+  position: absolute;
+  width: 800px;
+  height: 50px;
+  left: 320px;
+  top: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #182BA1;
+}
+
+/* Admin Button */
+.admin-button {
+  position: absolute;
+  width: 240px;
+  height: 54px;
+  left: 1160px;
+  top: 48px;
+  cursor: pointer;
+}
+
+.button-bg {
+  position: absolute;
+  width: 240px;
+  height: 54px;
+  left: 0;
+  top: 0;
+  background-color: #DDDFE0;
+  border-radius: 20px;
+}
+
+.button-text {
+  position: absolute;
+  left: 27px;
+  top: 12px;
+  width: 170px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FF5700;
+  text-align: center;
+}
+
+.button-arrow {
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  left: 201px;
+  top: 15px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #AD9588;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Title - "Педагогічний колектив" */
+.main-title {
+  position: absolute;
+  width: 800px;
+  height: 50px;
+  left: 320px;
+  top: 120px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #182BA1;
+}
+
+/* Admin Button */
+.admin-button {
+  position: absolute;
+  width: 240px;
+  height: 54px;
+  left: 1160px;
+  top: 115px;
+  cursor: pointer;
+}
+
+.button-bg {
+  position: absolute;
+  width: 240px;
+  height: 54px;
+  left: 0;
+  top: 0;
+  background-color: #DDDFE0;
+  border-radius: 20px;
+}
+
+.button-text {
+  position: absolute;
+  left: 27px;
+  top: 12px;
+  width: 170px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FF5700;
+  text-align: center;
+}
+
+.button-arrow {
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  left: 201px;
+  top: 15px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #AD9588;
+}
+
+/* "Професійна педагогічна спільнота" */
+.community-title {
+  position: absolute;
+  width: 1350px;
+  height: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 220px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+/* Teacher Cards Container */
+.teachers-container {
+  position: absolute;
+  top: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+/* Teacher Card */
+.teacher-card {
+  width: 1166px;
+  height: 260px;
+  margin: 0 auto;
+  background-color: rgba(24, 43, 161, 0.2);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.teacher-info {
+  width: 480px;
+  height: 216px;
+  margin: 22px 0 22px 60px;
+  display: flex;
+  position: relative;
+}
+
+.teacher-photo {
+  width: 150px;
+  height: 216px;
+  border-radius: 20px;
+  background-color: #ccc; /* Placeholder for teacher photo */
+  background-size: cover;
+  background-position: center;
+}
+
+.teacher-details {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teacher-name {
+  width: 280px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.teacher-subject-container {
+  width: 260px;
+  height: 50px;
+  background-color: #182BA1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher-subject {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.teacher-bio {
+  width: 510px;
+  height: 220px;
+  background-color: #DDDFE0;
+  border-radius: 20px;
+  margin: 20px;
+  margin-left: 66px;
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bio-text {
+  color: #FF5700;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Set different background images for each teacher card (placeholders) */
+.teacher-card:nth-child(1) .teacher-photo {
+  background-image: url('C:\Users\vital\project\European_lyceum\img\sheremet.jpg');
+}
+
+.teacher-card:nth-child(2) .teacher-photo {
+  background-image: url('https://via.placeholder.com/150x216');
+}
+
+.teacher-card:nth-child(3) .teacher-photo {
+  background-image: url('https://via.placeholder.com/150x216');
+}
+
+.teacher-card:nth-child(4) .teacher-photo {
+  background-image: url('https://via.placeholder.com/150x216');
+}
+
+.teacher-card:nth-child(5) .teacher-photo {
+  background-image: url('https://via.placeholder.com/150x216');
+}
+
+.teacher-card:nth-child(6) .teacher-photo {
+  background-image: url('https://via.placeholder.com/150x216');
+}
+
+
+
+/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Навігація */
+.tabs-nav {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  margin-top: 45px;
+}
+
+.tabs-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.49);
+  border-radius: 23px;
+}
+
+.tabs-container {
+  position: relative;
+  width: 1440px;
+  height: 24px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.tab-link {
+  position: absolute;
+  height: 24px;
+  color: #FF5700;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.tab-link.active {
+  color: #FF5700;
+  border-bottom: 2px solid #FF5700;
+  padding-bottom: 4px;
+}
+/* Контент */
+.section {
+  display: none;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Секція з заголовком та кнопкою */
+.title-section {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Педагогічний колектив */
+.pedagogical-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  text-align: center;
+  color: #182BA1;
+}
+
+/* Кнопка зі спадним списком */
+.year-selector {
+  position: absolute;
+  right: -40px;
+  top: 90px;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.year-button {
+  width: 220px;
+  height: 54px;
+  background-color: #DDDFE0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.year-text {
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF5700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  display: inline-block;
+}
+
+.year-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #AD9588;
+  transition: transform 0.3s ease;
+}
+
+.year-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 180px;
+  background-color: #DDDFE0;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1002;
+  margin-top: 10px;
+}
+
+.year-dropdown-content a {
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat Alternates';
+  font-size: 12px;
+  line-height: 1.2;
+  transition: background-color 0.3s ease;
+  background-color: #DDDFE0;
+}
+
+.year-dropdown-content a:hover {
+  background-color: #C5C7C8;
+  color: #FF5700;
+}
+
+.year-dropdown-content.active {
+  display: block;
+}
+
+.year-button.active .year-arrow {
+  transform: rotate(180deg);
+}
