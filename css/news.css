@@ -49,11 +49,13 @@
 
 .news-item {
     width: 100%;
-    height: 240px;
+    height: auto;
+    min-height: 240px;
     position: relative;
     display: flex;
     border-radius: 0;
     overflow: hidden;
+    transition: height 0.3s ease-in-out;
 }
 
 .news-item:nth-child(odd) {
@@ -96,6 +98,10 @@
     line-height: 1.5;
     color: white;
     margin: 20px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .read-more-btn {
@@ -111,9 +117,23 @@
     width: 231px;
     height: 33px;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.read-more-btn::after {
+.read-more-btn:hover {
+    background-color: rgba(225, 229, 235, 0.8);
+}
+
+.read-more-btn.expanded::after {
+    content: '↑';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.read-more-btn:not(.expanded)::after {
     content: '→';
     position: absolute;
     right: 10px;
@@ -134,6 +154,125 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.news-image:hover .news-image-overlay {
+    opacity: 1;
+}
+
+.news-image:hover img {
+    transform: scale(1.05);
+}
+
+.view-more-text {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-text:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Gallery Modal Styles */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-modal.active {
+    display: flex;
+}
+
+.gallery-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    z-index: 10000;
+}
+
+.gallery-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10000;
+}
+
+.gallery-nav button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-nav button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.gallery-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.gallery-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
 }
 
 .news-image::after {
@@ -151,6 +290,18 @@
 
 .news-item:nth-child(even) .news-image::after {
     background: linear-gradient(to bottom, transparent 50%, rgba(255, 109, 33, 0.6) 100%);
+}
+
+.news-item.expanded {
+    height: auto;
+}
+
+.news-item.expanded .news-content {
+    height: auto;
+}
+
+.news-item.expanded .news-item-text {
+    display: block;
 }
 
 .placeholder-message {

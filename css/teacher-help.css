@@ -30,28 +30,13 @@
 .section-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: rgba(24, 43, 161, 0.2);
     padding: 20px 30px;
     margin-bottom: 0;
     position: relative;
     cursor: pointer;
-    justify-content: space-between;
     border-radius: 18px 18px 0 0;
-}
-
-.section-marker {
-    width: 12px;
-    height: 12px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-    margin-top: -6px;
-}
-
-.section-header.active .section-marker {
-    transform: rotate(-135deg);
-    margin-top: 6px;
 }
 
 .section-title {
@@ -61,9 +46,22 @@
     position: relative;
     color: #fff;
     text-align: left;
-    left: 0;
-    top: 0;
-    width: auto;
+    flex-grow: 1;
+}
+
+.section-marker {
+    width: 12px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.section-header.active .section-marker {
+    transform: rotate(-135deg);
 }
 
 .section-content {
@@ -73,6 +71,7 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    text-align: left;
 }
 
 .section-header.active + .section-content {
@@ -89,6 +88,7 @@
     height: auto;
     box-sizing: border-box;
     transition: padding 0.3s ease;
+    text-align: left;
 }
 
 .section-header.active + .section-content .detailed-description {
@@ -97,7 +97,7 @@
 
 .detailed-description p {
     width: 100%;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 16px;
@@ -143,12 +143,16 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: left;
+    margin-left: 40px;
 }
 
 .document-item {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+    text-align: left;
+    padding-left: 0;
 }
 
 .document-icon {
@@ -169,6 +173,8 @@
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
+    text-align: left;
+    margin-left: 0;
 }
 
 .document-link:hover {

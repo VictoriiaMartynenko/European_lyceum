@@ -59,7 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetElement) {
                 // Отримуємо позицію цільового елемента
                 const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                let targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                // Додаємо додатковий відступ для FAQ секції
+                if (targetId === '#faq-section') {
+                    targetPosition += 100; // Додатковий відступ 100px
+                }
                 
                 // Прокручуємо до цільового елемента з урахуванням висоти хедера
                 window.scrollTo({
@@ -101,34 +106,31 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('No event-items found on page');
     }
 
-    // Обробка кнопки зі спадним списком
-    const yearButton = document.querySelector('.year-button');
-    const yearDropdown = document.querySelector('.year-dropdown-content');
+    // Випадаючий список років для розділу освітній процес 
+    const yearSelector = document.querySelector('.year-selector');
+    const yearDropdownContent = document.querySelector('.year-dropdown-content');
     
-    if (yearButton && yearDropdown) {
-        yearButton.addEventListener('click', function(e) {
+    if (yearSelector && yearDropdownContent) {
+        yearSelector.addEventListener('click', function(e) {
             e.stopPropagation();
-            yearButton.classList.toggle('active');
-            yearDropdown.classList.toggle('active');
+            yearDropdownContent.classList.toggle('active');
         });
-
-        // Закриваємо список при кліку поза ним
-        document.addEventListener('click', function(e) {
-            if (!yearButton.contains(e.target) && !yearDropdown.contains(e.target)) {
-                yearButton.classList.remove('active');
-                yearDropdown.classList.remove('active');
+        
+        // Закриваємо dropdown при кліку поза ним
+        document.addEventListener('click', function(event) {
+            if (!yearSelector.contains(event.target)) {
+                yearDropdownContent.classList.remove('active');
             }
         });
 
-        // Обробка вибору пункту меню
-        const yearLinks = yearDropdown.querySelectorAll('a');
+        // Обробка вибору року
+        const yearLinks = yearDropdownContent.querySelectorAll('a');
         yearLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const text = this.textContent;
                 document.querySelector('.year-text').textContent = text;
-                yearButton.classList.remove('active');
-                yearDropdown.classList.remove('active');
+                yearDropdownContent.classList.remove('active');
             });
         });
     }
@@ -205,4 +207,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateNumbers);
     // Викликаємо анімацію під час завантаження на випадок, якщо секція вже видима
     animateNumbers();
-}); 
+});
